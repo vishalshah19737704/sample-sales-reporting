@@ -8,7 +8,7 @@ SELECT
     SUM(order_amount)         AS total_sales
 FROM sales.orders
 WHERE order_date >= '2026-09-01'
-  AND order_date <  '2026-09-30'   -- month end
+  AND order_date <  '2026-10-01'   -- up to and including Sep 30
   AND status <> 'CANCELLED'
 GROUP BY region
 ORDER BY total_sales DESC;
