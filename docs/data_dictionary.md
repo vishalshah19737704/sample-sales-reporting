@@ -10,6 +10,8 @@
 
 ## Region owners
 
+Owners confirmed by Finance.
+
 | Region | Owner        |
 |--------|--------------|
 | North  | Sales Ops NA |
