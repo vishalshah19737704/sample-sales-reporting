@@ -7,3 +7,12 @@
 | order_amount  | orders | Order value in USD, after discounts   |
 | region        | orders | Sales region (North, South, East, West) |
 | status        | orders | OPEN, SHIPPED or CANCELLED            |
+
+## Region owners
+
+| Region | Owner        |
+|--------|--------------|
+| North  | Sales Ops NA |
+| South  | Sales Ops SA |
+| East   | Sales Ops EU |
+| West   | Sales Ops AP |
