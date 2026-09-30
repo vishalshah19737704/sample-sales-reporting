@@ -1,0 +1,14 @@
+# daily_sales_pipeline.yaml
+# Loads yesterday's orders into the reporting database.
+pipeline:
+  name: daily-sales-load
+  schedule: "0 6 * * *"      # every day at 06:00
+  source:
+    system: order-api
+    table: orders
+  target:
+    database: reporting
+    schema: sales
+    table: orders
+  connection: ${REPORTING_DB_CONNECTION}   # set in the secure vault, never here
+  on_failure: notify-sales-reporting-team
